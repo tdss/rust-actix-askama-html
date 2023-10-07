@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+  <style>
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>Index</h1>
+<p>Hello, {{name}}!</p>
+  <button hx-post="/button" hx-swap="outerHTML">
+    Click Me
+  </button>
+  {% call super() %}
+{% endblock %}
+
